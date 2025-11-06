@@ -1,0 +1,14 @@
+node_modules
+.env*
+.vscode
+.git
+*.log
+server/data
+src
+public
+docs
+scripts/*.sh
+scripts/*.bat
+README.md
+*.md
+!DEPLOY_VERCEL.md
