@@ -22,8 +22,8 @@ if (!ADMIN_PASSWORD && !ADMIN_AUTH_DISABLED) {
   process.exit(1);
 }
 
-// Storage paths
-const dataDir = path.resolve(process.cwd(), 'server', 'data');
+// Storage paths - use /tmp for Vercel
+const dataDir = process.env.VERCEL ? '/tmp/data' : path.resolve(process.cwd(), 'server', 'data');
 const beneficiariesFile = path.join(dataDir, 'beneficiaries.json');
 const donationsFile = path.join(dataDir, 'donations.json');
 const necessidadesFile = path.join(dataDir, 'necessidades.json');
