@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Iniciando build..."
+npm install
+npm run build
+echo "Build concluído com sucesso!"
+ls -la dist/

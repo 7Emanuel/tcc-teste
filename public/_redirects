@@ -1,0 +1,6 @@
+/api/* /api/index.js 200
+/auth/* /api/index.js 200
+/health /api/index.js 200
+/users /api/index.js 200
+/coletas/* /api/index.js 200
+/* /index.html 200
