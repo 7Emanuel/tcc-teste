@@ -11,10 +11,16 @@ dotenv.config();
 const router = express.Router();
 
 // Config
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'daniel';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 const ADMIN_SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || 'admin-dev-secret';
 const ADMIN_AUTH_DISABLED = String(process.env.ADMIN_AUTH_DISABLED || '').toLowerCase() === 'true';
 const SESSION_EXPIRES_HOURS = 12; // 12h
+
+// Validar se a senha do admin está configurada
+if (!ADMIN_PASSWORD && !ADMIN_AUTH_DISABLED) {
+  console.error('❌ ERRO: ADMIN_PASSWORD não está configurada nas variáveis de ambiente!');
+  process.exit(1);
+}
 
 // Storage paths
 const dataDir = path.resolve(process.cwd(), 'server', 'data');
@@ -100,8 +106,6 @@ router.post('/login', rateLimitLogin, (req, res) => {
     }
     
     console.log('🔍 Verificando senha...');
-    console.log('Senha recebida:', password);
-    console.log('Senha esperada:', ADMIN_PASSWORD);
     
     if (password !== ADMIN_PASSWORD) {
       console.log('❌ Senha incorreta');

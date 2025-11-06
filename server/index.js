@@ -388,5 +388,10 @@ app.post('/coletas/agendar', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`API rodando em http://localhost:${PORT}`));
+// Only start server if not in Vercel environment
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`API rodando em http://localhost:${PORT}`));
+}
+
+export default app;

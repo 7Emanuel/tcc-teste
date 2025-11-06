@@ -1,11 +1,11 @@
 [
   {
-    "id": "1761844182287-0-zj0l5e",
-    "userId": "1760635428923-qx9ncb",
-    "necessitadoNome": "Emanuel Prado",
+    "id": "1762438696502-0-y95r7k",
+    "userId": 4,
+    "necessitadoNome": "Emanuel",
     "necessitadoContato": {
-      "email": "emanuel@gmail.com",
-      "telefone": "17384973572"
+      "email": "emanuel1@gmail.com",
+      "telefone": "18283940564"
     },
     "item": "Arroz",
     "categoria": "Alimentos",
@@ -15,86 +15,24 @@
     "prioridade": "alta",
     "enderecoEntrega": {
       "tipo": "endereco",
-      "cep": "17283-946",
-      "logradouro": "Mario de Almeida",
-      "numero": "413",
+      "cep": "26479-465",
+      "logradouro": "Alagoinha",
+      "numero": "158",
       "complemento": "",
       "bairro": "rodovia",
       "cidade": "Artur Nogueira",
       "uf": "SP",
-      "endereco": "Mario de Almeida, 413, rodovia"
+      "endereco": "Alagoinha, 158, rodovia"
     },
     "status": "pendente",
     "observacaoInterna": "",
-    "criadoEm": "2025-10-30T17:09:42.287Z",
-    "atualizadoEm": "2025-10-30T17:09:42.287Z",
+    "criadoEm": "2025-11-06T14:18:16.502Z",
+    "atualizadoEm": "2025-11-06T14:18:16.502Z",
     "termsAccepted": true,
     "originalRequest": {
       "urgency": "alta",
-      "description": "sem alimento",
-      "submittedAt": "2025-10-30T17:09:42.287Z"
+      "description": "pouca em casa",
+      "submittedAt": "2025-11-06T14:18:16.502Z"
     }
-  },
-  {
-    "id": "1761846508118-0-220any",
-    "userId": 3,
-    "necessitadoNome": "Emanuel Prado",
-    "necessitadoContato": {
-      "email": "emanuel@gmail.com",
-      "telefone": "16384973425"
-    },
-    "item": "Mamão",
-    "categoria": "Alimentos",
-    "quantidade": 1000,
-    "unidade": "kg",
-    "descricao": "extra grande",
-    "prioridade": "urgente",
-    "enderecoEntrega": {
-      "tipo": "endereco",
-      "cep": "63547-839",
-      "logradouro": "Alagoinha",
-      "numero": "158",
-      "complemento": "",
-      "bairro": "FDP",
-      "cidade": "PQP",
-      "uf": "DF",
-      "endereco": "Alagoinha, 158, FDP"
-    },
-    "status": "atendida",
-    "observacaoInterna": "",
-    "criadoEm": "2025-10-30T17:48:28.118Z",
-    "atualizadoEm": "2025-10-30T17:55:34.599Z",
-    "termsAccepted": true,
-    "originalRequest": {
-      "urgency": "urgente",
-      "description": "estou morrendo",
-      "submittedAt": "2025-10-30T17:48:28.118Z"
-    },
-    "historicoStatus": [
-      {
-        "at": "2025-10-30T17:55:19.361Z",
-        "by": "admin",
-        "status": "atendida",
-        "observacao": ""
-      },
-      {
-        "at": "2025-10-30T17:55:26.399Z",
-        "by": "admin",
-        "status": "pendente",
-        "observacao": ""
-      },
-      {
-        "at": "2025-10-30T17:55:30.664Z",
-        "by": "admin",
-        "status": "parcial",
-        "observacao": ""
-      },
-      {
-        "at": "2025-10-30T17:55:34.599Z",
-        "by": "admin",
-        "status": "atendida",
-        "observacao": ""
-      }
-    ]
   }
 ]
